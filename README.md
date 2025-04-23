@@ -1,3 +1,4 @@
+
 # Paradise Wild Sand
 
 *Paradise Wild Sand* is a beachfront resort website project designed for a serene stay near Serenity Beach, Pondicherry. This website includes room details, tariff, policies, and a booking system with Razorpay integration.
@@ -19,7 +20,7 @@
 [Visit Paradise Wild Sand](https://paradisewildsand.netlify.app)
 
 ## Screenshots
-(Add screenshots using markdown or upload in assets/ folder)
+![ss](https://github.com/user-attachments/assets/d7a9573a-0e84-4e7d-812d-67bbcb0ff7b2)
 
 
 ## Developed By
