@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paradise Wild Sand Booking</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/booking-icon.png">
+  <link rel="stylesheet" href="style/booking.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Stay - Paradise Wild Sand</h1>
+
+    <form id="booking-form">
+      <label>Name: <input type="text" id="name" required /></label>
+      <label>Email: <input type="email" id="email" required /></label>
+      <label>Phone: <input type="tel" id="phone" required /></label>
+
+      <label>Check-in Date: <input type="date" id="checkin" required /></label>
+      <label>Check-out Date: <input type="date" id="checkout" required /></label>
+      <label>No. of Guests: <input type="number" id="guests" min="1" required /></label>
+
+      <label><input type="checkbox" id="breakfast" /> Include Breakfast( ₹200 )</label>
+
+      <h3>Select Rooms</h3>
+
+      <div class="floor-section">
+        <h4>Ground Floor</h4>
+        <label><input type="checkbox" class="room" value="101" /> Room 101</label>
+        <label><input type="checkbox" class="room" value="102" /> Room 102</label>
+        <label><input type="checkbox" class="room" value="103" /> Room 103</label>
+        <label><input type="checkbox" class="room" value="104" /> Room 104</label>
+      </div>
+
+      <div class="floor-section">
+        <h4>First Floor</h4>
+        <label><input type="checkbox" class="room" value="201" /> Room 201</label>
+        <label><input type="checkbox" class="room" value="202" /> Room 202</label>
+        <label><input type="checkbox" class="room" value="203" /> Room 203</label>
+        <label><input type="checkbox" class="room" value="204" /> Room 204</label>
+      </div>
+
+      <div class="floor-section">
+        <h4>Second Floor</h4>
+        <label><input type="checkbox" class="room" value="301" /> Room 301</label>
+        <label><input type="checkbox" class="room" value="302" /> Room 302</label>
+        <label><input type="checkbox" class="room" value="303" /> Room 303</label>
+        <label><input type="checkbox" class="room" value="304" /> Room 304</label>
+      </div>
+
+      <div class="floor-section">
+        <h4>Third Floor</h4>
+        <label><input type="checkbox" class="room" value="401" /> Room 401</label>
+        <label><input type="checkbox" class="room" value="402" /> Room 402</label>
+        <label><input type="checkbox" class="room" value="403" /> Room 403</label>
+      </div>
+
+      <h3>Total Price: ₹<span id="total-price">0</span></h3>
+      <h3>Advance (20%): ₹<span id="advance-amount">0</span></h3>
+
+    <button type="button" onclick="calculatePrice()">Check Price</button>
+    <button type="button" onclick="proceedToPayment()">Proceed to Payment</button>
+    </form>
+  </div>
+  <div id="closedDatesNotice" class="closed-dates-box">
+    <h3>⚠️ Unavailable Dates</h3>
+    <ul id="closedDatesList"></ul>
+  </div>
+
+  <script src="js/booking-details.js"></script>
+</body>
+</html>

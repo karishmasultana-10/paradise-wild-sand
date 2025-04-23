@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - Paradise Wild Sand</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/payment-icon.png">
+  <link rel="stylesheet" href="style/payment.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <i class="fas fa-receipt">
+      </i>
+      Confirm & Pay</h1>
+
+    <div class="summary-box">
+      <h2>Booking Summary</h2>
+      <div class="info-group">
+        <div class="info-labels">
+          <p><i class="fas fa-user"></i> Name:</p>
+          <p><i class="fas fa-envelope"></i> Email:</p>
+          <p><i class="fas fa-phone"></i> Phone:</p>
+          <p><i class="fas fa-calendar-check"></i> Check-in:</p>
+          <p><i class="fas fa-calendar-times"></i> Check-out:</p>
+          <p><i class="fas fa-users"></i> Guests:</p>
+          <p><i class="fas fa-utensils"></i> Breakfast:</p>
+          <p><i class="fas fa-door-closed"></i> Rooms:</p>
+        </div>
+        <div class="info-values">
+          <p id="user-name"></p>
+          <p id="user-email"></p>
+          <p id="user-phone"></p>
+          <p id="user-checkin"></p>
+          <p id="user-checkout"></p>
+          <p id="user-guests"></p>
+          <p id="user-breakfast"></p>
+          <p id="user-rooms"></p>
+        </div>
+      </div>
+
+    </div>
+    <div class="price-section">
+      <p id="total-price"><i class="fas fa-wallet"></i> Total Price: ₹<span id="user-total"></span></p>
+      <p id="advance-payment"><i class="fas fa-money-bill-wave"></i> Payable Now: ₹<span id="user-advance"></span></p>
+      <p id="remaining-payment"><i class="fas fa-coins"></i> Remaining: ₹ <span id="user-remaining"></span>(Pay @ hotel)</p>
+    </div>
+
+    <button id="payBtn">
+      <i class="fas fa-credit-card"></i>
+      Pay Now</button>
+  </div>
+
+  <script src="js/payment.js"></script>
+</body>
+</html>
