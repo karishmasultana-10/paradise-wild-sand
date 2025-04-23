@@ -703,30 +703,32 @@ nav a.active {
 
 
 .social-icons {
-  margin-top: 10px;
-  
- 
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
 }
 
 .social-icons a {
-  font-size: 28px;
-  margin: 0 10px;
-  text-decoration: none;
-  background-color: white; /* Set the background to white */
-  border-radius: 50%; /* To make it circular */
-  padding: 10px; /* Add some padding around the icon */
-  display: inline-block; /* Ensures icons stay next to each other */
-  transition: background-color 0.3s ease; /* Smooth transition effect */
-}
-.social-icons a:hover {
-  background-color: #f1f1f1; /* Slight grey on hover */
-}
-.social-icons img {
-  vertical-align: middle; 
-  width: 30px; /* Keep the size of the icons */
-  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+.social-icons a:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
 /* Gallery sectcion */
 .image-carousel{
   display: flex;
