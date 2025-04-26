@@ -25,14 +25,14 @@ header {
 
 /* Navbar Layout */
 .nav {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  padding:10px ;
+  /* width: 90%; */
+  /* max-width: 1200px; */
+  /* margin: auto; */
+  /* padding:10px ; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 /* Logo Section */
@@ -57,14 +57,14 @@ header {
 /* Navigation */
 .navigation ul {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
+  /* flex-wrap: nowrap; */
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-shrink: 1;
+  /* flex-shrink: 1; */
 }
 
 .navigation li {
@@ -90,8 +90,8 @@ header {
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
     gap: 6px;
   }
 
@@ -102,8 +102,8 @@ header {
   }
 
   .navigation ul {
-    flex-direction: row;
-    justify-content: center;
+    /* flex-direction: row; */
+    /* justify-content: center; */
     flex-wrap: wrap;
     gap: 10px;
   }
@@ -121,15 +121,15 @@ header {
   }
 
   .logo-img {
-    width: 70px;
+    width: 90px;
   }
 }
 
 
 .container-head {
   max-width: 650px;
-  margin: 50px auto;
-  padding: 25px;
+  margin: 40px auto;
+  padding: 30px;
   background: #ffffff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -145,9 +145,29 @@ h1 {
 /* User details grid styling */
 .info-group {
   display: grid;
-  grid-template-columns: 1fr 2fr; 
+  grid-template-columns: 1fr 1fr; 
   gap: 10px;
-  padding: 10px;
+  margin-bottom:30px ;
+  /* padding: 10px; */
+}
+
+.info-labels p, .info-values p{
+  margin: 0;
+  padding: 8px;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.info-labels p{
+  font-weight: 600;
+  color: #056676;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-values p{
+  color: #333;
 }
 
 .info-group div {
@@ -164,7 +184,7 @@ h1 {
   
 }
 
-.info-group {
+/* .info-group {
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -173,8 +193,8 @@ h1 {
 
 .info-labels, .info-values {
   flex: 1;
-}
-
+} */
+/* 
 .info-labels p, .info-values p {
   padding: 10px;
   margin: 0;
@@ -188,12 +208,12 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-}
+} */
 
-.info-labels p i {
+/* .info-labels p i {
   width: 20px;
   color: #056676;
-}
+} */
 /* Price Sections */
 .total-price {
   font-weight: bold;
@@ -281,6 +301,10 @@ h1 {
 @media (max-width: 600px) {
   #location iframe {
       height: 250px; 
+  }
+
+  .info-group{
+    grid-template-columns: 1fr;
   }
 }
 
