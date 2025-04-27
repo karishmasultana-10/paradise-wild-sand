@@ -144,21 +144,7 @@ h1 {
   font-size: 28px;
 }
 
-/* User details grid styling */
-/* .info-group {
-  display: grid;
-  grid-template-columns: 1fr 2fr; 
-  gap: 10px;
-  padding: 10px;
-}
 
-.info-group div {
-  font-size: 14px;
-}
-
-.info-group i {
-  color: #005b99;
-} */
 
 /* Summary box styles */
 .summary-box h2{
@@ -166,36 +152,6 @@ h1 {
   
 }
 
-/* .info-group {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.info-labels, .info-values {
-  flex: 1;
-}
-
-.info-labels p, .info-values p {
-  padding: 10px;
-  margin: 0;
-  font-size: 16px;
-  border-bottom: 1px solid #eee;
-}
-
-.info-labels p {
-  font-weight: 600;
-  color: #056676;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.info-labels p i {
-  width: 20px;
-  color: #056676;
-} */
 
 .info-row {
   display: flex;
@@ -219,34 +175,6 @@ h1 {
   max-width: 60%;
   text-align: right;
   word-break: break-word;
-}
-
-
-@media (max-width: 480px) {
-
-  /* .info-row{
-    flex-direction: column;
-    align-items: flex-end;
-  } */
-  /* .info-group {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px;
-  } */
-
-  /* .info-labels, .info-values {
-    width: 100%;
-    flex: 1;
-    min-width: 45%;
-  } */
-
-  /* .info-labels p, .info-values p {
-    text-align: left;
-    font-size: 14px;
-    padding: 8px;
-    word-break: break-word;
-  } */
 }
 
 /* Price Sections */
