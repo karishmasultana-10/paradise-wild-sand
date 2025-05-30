@@ -33,20 +33,17 @@ document.querySelectorAll('.scroll-link').forEach(anchor => {
     });
   });
   
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
+// document.addEventListener('DOMContentLoaded', function() {
+//     const menuToggle = document.getElementById('menu-toggle');
+//     const navLinks = document.getElementById('nav-links');
     
-    menuToggle.addEventListener('click', () => {
-      navLinks.querySelector('ul').classList.toggle('show');
-    });
-});
+//     menuToggle.addEventListener('click', () => {
+//       navLinks.querySelector('ul').classList.toggle('show');
+//     });
+// });
    
 
-menuToggle.addEventListener('click', () => {
-    console.log("Hamburger clicked!"); // Debugging line
-    navLinks.classList.toggle('show');
-  });
+
    
   
   
